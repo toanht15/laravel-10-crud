@@ -14,11 +14,11 @@ use App\Http\Controllers\ProductController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::resource('products', ProductController::class);
-Route::get('/', [ProductController::class, 'index']);
+//Route::get('/', [ProductController::class, 'index']);
 
